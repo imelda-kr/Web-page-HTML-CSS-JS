@@ -1,0 +1,172 @@
+
+@font-face {
+    font-family: 'Rischie';
+    font-weight: 300;
+    src: url('../fonts/webFonts/RischeLight/font.woff');
+    src: url('../fonts/webFonts/RischeLight/font.woff2');
+}
+@font-face {
+    font-family: 'Rischie';
+    font-weight: 400;
+    src: url('../fonts/webFonts/RischeRegular/font.woff');
+    src: url('../fonts/webFonts/RischeRegular/font.woff2');
+}
+@font-face {
+    font-family: 'Rischie';
+    font-weight: 500;
+    src: url('../fonts/webFonts/RischeMedium/rischemedium.woff');
+    src: url('../fonts/webFonts/RischeMedium/rischemedium.woff2');
+}
+@font-face {
+    font-family: 'Rischie';
+    font-weight: 600;
+    src: url('../fonts/webFonts/RischeSemibold/rischsemi.woff');
+    src: url('../fonts/webFonts/RischeSemibold/rischsemi.woff2');
+}
+@font-face {
+    font-family: 'Rischie';
+    font-weight: 700;
+    src: url('../fonts/webFonts/RischeBold/font.woff');
+    src: url('../fonts/webFonts/RischeBold/font.woff2');
+}
+@font-face {
+    font-family: 'Rischie';
+    src: url('../fonts/webFonts/RischeVariable/font.woff');
+    src: url('../fonts/webFonts/RischeVariable/font.woff2');
+}
+body {
+    font-family: 'Rischie';
+}
+.mega-title {
+
+    font-weight: 300;
+    font-size: 112px;
+}
+h1 {
+   
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+}
+h2 {
+  
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 110%;
+}
+h3 {
+ 
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 52px;
+}
+h4 {
+   
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+}
+h5 {
+   
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.23em;
+}
+.eyebrown-small {
+    
+    font-weight: 500;
+    font-size: 18px;
+}
+.parag-1 {
+   
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 180%;
+}
+.parag-2 {
+   
+    font-weight: 400;
+    font-size: 16px;
+}
+.parag-3 {
+    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: -0.01em;
+}
+.blue-button {
+    width: 199px;
+    height: 58px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.24em;
+    text-align: center;
+    color: #FFFFFF;
+    background: #0047FF;
+    box-shadow: 6px 57px 23px rgba(26, 113, 255, 0.04), 3px 32px 20px rgba(26, 113, 255, 0.13), 
+    2px 14px 14px rgba(26, 113, 255, 0.21), 
+    0px 4px 8px rgba(26, 113, 255, 0.25), 0px 0px 0px rgba(26, 113, 255, 0.25);
+    border: none;
+}
+
+.blue-button:hover {
+    background: #2F69FF;
+    box-shadow: 6px 57px 23px rgba(26, 113, 255, 0.04), 3px 32px 20px rgba(26, 113, 255, 0.13), 2px 14px 14px rgba(26, 113, 255, 0.21), 0px 4px 8px rgba(26, 113, 255, 0.25), 
+    0px 0px 0px rgba(26, 113, 255, 0.25);
+}
+
+.blue-button:active {
+    background: #0941D1;
+    box-shadow: 6px 57px 23px rgba(26, 113, 255, 0.04), 3px 32px 20px rgba(26, 113, 255, 0.13), 2px 14px 14px rgba(26, 113, 255, 0.21), 0px 4px 8px rgba(26, 113, 255, 0.25), 
+    0px 0px 0px rgba(26, 113, 255, 0.25);
+}
+
+.slider-left {
+    width: 48px;
+    height: 48px;
+    background: #0047FF;
+    backdrop-filter: blur(23.2456px);
+    border: none;
+    border-radius: 49px;
+    opacity: 0.2;
+    filter: drop-shadow(6px 57px 23px rgba(26, 113, 255, 0.04)) drop-shadow(3px 32px 20px rgba(26, 113, 255, 0.13)) drop-shadow(2px 14px 14px rgba(26, 113, 255, 0.21)) drop-shadow(0px 4px 8px rgba(26, 113, 255, 0.25)) 
+    drop-shadow(0px 0px 0px rgba(26, 113, 255, 0.25));
+}
+.slider-right {
+    width: 48px;
+    height: 48px;
+    background: #0047FF;
+    backdrop-filter: blur(23.2456px);
+    border: none;
+    border-radius: 49px;
+    filter: drop-shadow(6px 57px 23px rgba(26, 113, 255, 0.04)) drop-shadow(3px 32px 20px rgba(26, 113, 255, 0.13)) drop-shadow(2px 14px 14px rgba(26, 113, 255, 0.21)) drop-shadow(0px 4px 8px rgba(26, 113, 255, 0.25)) 
+    drop-shadow(0px 0px 0px rgba(26, 113, 255, 0.25));
+}
+
+.arrow-left, .arrow-right {
+    display: block;
+    margin: 10px auto;
+    width: 16px;
+    height: 16px;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+}
+.arrow-left {
+    transform: rotate(-45deg);
+}
+.arrow-right {
+    transform: rotate(135deg);
+}
+
+.arrow-left::after, .arrow-right::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 17px;
+    background-color: #ffffff;
+    transform: rotate(-45deg) translate(6px, 4px);
+}

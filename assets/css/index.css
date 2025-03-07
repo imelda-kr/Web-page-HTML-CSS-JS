@@ -1,0 +1,1710 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.maxw {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    height: 108px;
+    width: 100%;
+    z-index: 4;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background: rgba(1, 49, 170, 0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    /* Možeš dodati neku boju pozadine */
+    z-index: 0;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    text-decoration: underline;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    font-size: 60px;
+}
+
+.text {
+    position: absolute;
+    top: 177px;
+    left: 138px;
+}
+
+.container-overlay:hover .overlay {
+    width: 100%;
+}
+
+.lng {
+    width: 171px;
+    height: 26px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.23em;
+    text-transform: uppercase;
+    color: #E4E4E4;
+}
+
+.lng>.lngactive {
+
+    color: #FFFFFF;
+}
+
+.menu-full {
+    position: sticky;
+    z-index: 2;
+}
+
+.nav-dio {
+    display: flex;
+    justify-content: space-between;
+    height: 108px;
+    width: 100%;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.hamburger-menu-full {
+    display: flex;
+    justify-content: space-between;
+    width: 81px;
+    height: 12px;
+    margin-top: 48px;
+}
+
+.menu-text>h5 {
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+.hamburger-menu {
+    width: 30px;
+    height: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger-menu [class*='bar-'] {
+    width: 30px;
+    border: 1px solid #FFFFFF;
+    transition: .2s ease all;
+    margin-left: 8px;
+}
+
+.active .bar-top {
+    transform: translate(0, 5px) rotate(-25deg);
+}
+
+.active .bar-middle {
+    opacity: 0;
+}
+
+.active .bar-bottom {
+    transform: translate(0, -5px) rotate(25deg);
+}
+
+.flex {
+    margin-top: 26px;
+    width: 98.5px;
+    height: 40px;
+}
+
+.placeholder {
+    width: 100px;
+    height: 80px;
+    margin-top: 20px;
+    margin-right: 64px;
+}
+
+.overlay-img {
+    position: absolute;
+    width: 100%;
+    height: 115vh;
+    left: 0;
+    top: -108px;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.ship {
+    position: fixed;
+    /* Drži sliku fiksiranu tijekom skrola */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Prilagodi dimenzije prema potrebama */
+    z-index: -1;
+    /* Postavi sliku ispod drugih elemenata */
+    transition: transform 0.2s ease-in-out;
+}
+
+.animate-me {
+    animation: bounceIn 3s ease-in-out;
+}
+
+.intro {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Postavi visinu sekcije na cijeli zaslon */
+}
+
+.intro-anim {
+    position: relative;
+    padding-top: 244px;
+}
+
+.intro-title {
+    margin-left: 145px;
+}
+
+.intro-title>h1 {
+    letter-spacing: 0.03em;
+    line-height: 100%;
+    color: #FFFFFF;
+    width: 614px;
+    height: 120px;
+    z-index: 3;
+}
+
+.intro-btn {
+    width: 271px;
+    height: 58px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.24em;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    margin-top: 10px;
+
+    z-index: 3;
+}
+
+.intro-img {
+    margin-top: 320px;
+    display: flex;
+    position: relative;
+    margin-left: 50%;
+    margin-right: 25px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.intro-img-btn {
+    width: 225px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(25px);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #FFFFFF;
+    margin-top: -60px;
+}
+
+.intro-img-btn>img {
+    width: 75px;
+    height: 48px;
+}
+
+.about-yolo-sec {
+    z-index: 1;
+    background: white;
+    position: relative;
+}
+
+.about-yolo {
+    display: flex;
+    background-color: #FFFFFF;
+    z-index: 1;
+    position: relative;
+}
+
+.about-yolo-left {
+
+    margin-top: 180px;
+    margin-left: 136px;
+    height: fit-content;
+    position: relative;
+
+}
+
+.boat {
+    width: 568px;
+    height: 800px;
+}
+
+.about-yolo-shine {
+    position: absolute;
+    z-index: 5;
+    right: -20px;
+    top: -20px;
+}
+
+.about-yolo-right {
+    width: 368px;
+    margin-top: 268px;
+    margin-left: 132px;
+    margin-bottom: 88px;
+    align-self: center;
+    position: relative;
+}
+
+.about-yolo-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+
+.about-yolo-text h5 {
+    margin-top: 12px;
+}
+
+.about-yolo-parag>p {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+h5 {
+    color: #838383;
+}
+
+.island-sec {
+    z-index: 1;
+    background: white;
+    position: relative;
+}
+
+.island {
+    display: flex;
+    padding-top: 180px;
+    padding-left: 136px;
+
+}
+
+.island-left {
+    width: 368px;
+    height: 435px;
+}
+
+.island-left>h5 {
+    color: #0047FF;
+}
+
+.island-left>h2 {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.island-left>p {
+    margin-bottom: 32px;
+}
+
+.island-right {
+    overflow: clip;
+    height: 100vh;
+}
+
+.slider-element {
+    display: flex;
+    position: relative;
+
+}
+
+.slider-element-left {
+    margin-left: 136px;
+}
+
+.slider-element-right {
+    margin-left: 32px;
+}
+
+.slider-el-left-img {
+    z-index: 1;
+    position: relative;
+    width: 468px;
+    height: 652px;
+}
+
+.slider-el-right-img {
+    z-index: 1;
+    position: relative;
+    overflow: clip;
+    width: 468px;
+    height: 652px;
+}
+
+.slider-left-text {
+    z-index: 3;
+    position: absolute;
+    margin-top: -98px;
+    margin-left: 56px;
+}
+
+.slider-right-text {
+    z-index: 3;
+    position: absolute;
+    margin-top: -98px;
+    margin-left: 56px;
+}
+
+.slider-element p {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.slider-element h5 {
+    color: #FFFFFF;
+}
+
+.slider-btn {
+    display: block;
+    margin-top: 75%;
+    left: 70%;
+    position: absolute;
+}
+
+.slider-right {
+    margin-left: 24px;
+}
+
+.experience-sec {
+    z-index: 1;
+    background: white;
+    position: relative;
+}
+
+.experience {
+    display: flex;
+    position: relative;
+    padding-top: 80px;
+}
+
+.experience-left>img {
+    width: 604px;
+    height: 860px;
+    position: absolute;
+    left: 0px;
+}
+
+.experience-right {
+    display: flex;
+    flex-direction: column;
+    width: 466px;
+    height: 647px;
+    margin-left: 55%;
+    margin-top: 213px;
+}
+
+.experience-right>h5 {
+    color: #0047FF;
+}
+
+.experience-right>h2 {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.experience-right>p {
+    margin-bottom: 32px;
+}
+
+.references-sec {
+    z-index: 1;
+    background: white;
+    position: relative;
+}
+
+.references {
+
+    padding-top: 180px;
+}
+
+.references-title>h5 {
+    color: #0047FF;
+    margin-bottom: 16px;
+}
+
+.references-title {
+    width: 799px;
+    height: 87px;
+    margin-left: 104px;
+    margin-right: 249px;
+    position: relative;
+}
+
+.slider-refer-btn {
+    position: absolute;
+    right: 210px;
+    margin-top: -122px;
+}
+
+.references-elements {
+    display: flex;
+    margin-top: 72px;
+}
+
+.references-left {
+    width: 668px;
+    height: 372px;
+    background: #FAFAFA;
+    margin-left: 134px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.references-left>p {
+    width: 550px;
+    height: 54px;
+    padding-left: 59px;
+    padding-right: 59px;
+    text-align: center;
+}
+
+.references-right {
+    margin-left: 32px;
+    width: 668px;
+    height: 372px;
+    background: #FAFAFA;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.references-right>p {
+    width: 550px;
+    height: 81px;
+    padding-left: 59px;
+    padding-right: 59px;
+    text-align: center;
+}
+
+.references-guest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.references-guest>h6 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 110%;
+    margin-left: 10px;
+}
+
+.quote-sec {
+    z-index: 1;
+    background: white;
+    position: relative;
+}
+
+.quote {
+    position: relative;
+    padding-top: 180px;
+    height: 100vh;
+}
+
+.quote>img {
+    position: absolute;
+    max-width: 1440px;
+    width: 100%;
+    left: 0px;
+    height: 100vh;
+    z-index: 1;
+    object-fit: cover;
+
+}
+
+.quote-request {
+    position: absolute;
+    z-index: 2;
+    margin-top: 477px;
+    margin-left: 104px;
+    width: 466px;
+    height: 236px;
+    color: #FFFFFF;
+}
+
+.quote-request>h5 {
+    color: #FFFFFF;
+}
+
+.quote-request>h2 {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.why-yolo-sec {
+    z-index: 1;
+    background: white;
+    position: relative;
+}
+
+.why-yolo {
+    padding-top: 180px;
+
+}
+
+.why-yolo-title {
+    width: 880px;
+    height: 205px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 4;
+    position: relative;
+}
+
+.why-yolo-title>h5 {
+    margin-bottom: 16px;
+    color: #0047FF;
+}
+
+.why-yolo-img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.why-img-left {
+    width: 197px;
+    height: 144px;
+    margin-top: 115px;
+    margin-left: 115px;
+
+}
+
+.why-img-middle {
+    width: 436px;
+    height: 572px;
+    margin-top: -45px;
+    margin-left: 169px;
+    margin-bottom: 176px;
+    z-index: 1;
+    position: relative;
+}
+
+.why-img-shine {
+    position: relative;
+    margin-right: 87px;
+    margin-left: -34px;
+    z-index: 3;
+}
+
+.why-img-right {
+    width: 210px;
+    height: 282px;
+    margin-right: 115px;
+    margin-bottom: 176px;
+
+}
+
+footer {
+    padding-left: 131px;
+    padding-right: 136px;
+    background: rgba(1, 49, 170, 0.8);
+    backdrop-filter: blur(40px);
+}
+
+.footer-logo {
+    padding-top: 120px;
+    margin-bottom: 180px;
+    Width: 68.95px;
+    Height: 28px;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-yolo {
+
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46.8px;
+
+}
+
+.footer-contact-img {
+    margin-top: 20px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-menu {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 170%;
+    color: #FFFFFF;
+}
+
+.footer-address {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 21px;
+    letter-spacing: 0.27em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-border {
+    margin-top: 140px;
+    margin-bottom: 40px;
+    border: 1px solid #4B68B1;
+}
+
+
+.footer-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-copyright>p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.footer-copyright>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 60px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 25px;
+    letter-spacing: 0.48em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.madeby {
+    margin-bottom: 132px;
+}
+
+@media screen and (max-width: 1440px) {
+    .intro-img {
+        margin-top: 212px;
+    }
+
+    .slider-btn {
+        right: 136px;
+    }
+
+    .slider-refer-btn {
+        right: 136px;
+    }
+
+    .nav-dio {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .placeholder {
+
+        margin-right: 32px;
+    }
+
+}
+
+@media screen and (max-width: 1112px) {
+    .ship {
+        object-fit: cover;
+    }
+
+    .about-yolo-left {
+        margin-left: 60px;
+    }
+
+    .about-yolo-right {
+        margin-left: 80px;
+    }
+
+    .island {
+        margin-left: 60px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    .slider-element-left {
+        margin-left: 100px;
+    }
+
+    .experience-right {
+        width: 400px;
+        margin-left: 60%;
+    }
+
+    .slider-refer-btn {
+        right: 60px;
+    }
+
+    .references-left {
+        width: 505px;
+        margin-left: 70px;
+    }
+
+    .references-elements p {
+        width: 490px;
+    }
+
+    .references-guest {
+        width: 200px;
+        height: 90px;
+    }
+
+    .references-guest>img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .why-img-left {
+        margin-left: 60px;
+    }
+
+    .why-img-middle {
+        margin-left: 140px;
+    }
+
+    .why-img-right {
+        margin-right: 60px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .boat {
+        width: 500px;
+        height: 700px;
+    }
+
+    .about-yolo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .about-yolo-right {
+        width: 600px;
+        margin-top: 150px;
+        margin-left: 0px;
+    }
+
+    .about-yolo-right>h2 {
+        font-size: 54px;
+    }
+
+    .about-yolo-right h4 {
+        font-size: 28px;
+    }
+
+    .about-yolo-left {
+        margin-left: 0px;
+    }
+
+    .island {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .island-left {
+        width: 600px;
+        height: 500px;
+    }
+
+    .slider-island {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .slider-btn {
+        display: block;
+        margin-top: 48px;
+        position: relative;
+        right: 0;
+    }
+
+    .slider-element-left {
+        margin: 0;
+    }
+
+    .slider-el-left-img {
+        width: 380px;
+        height: 530px;
+    }
+
+    .slider-el-right-img {
+        width: 380px;
+        height: 530px;
+    }
+
+    .slider-element-right {
+        margin-left: 20px;
+    }
+
+    .experience {
+        display: flex;
+        position: relative;
+        margin-top: 80px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .experience-right {
+        width: 600px;
+        height: 400px;
+        margin-left: 0px;
+        margin-top: 20px;
+
+    }
+
+    .experience-left {
+        margin-top: 50px;
+    }
+
+    .experience-left>img {
+        width: 500px;
+        height: 700px;
+        position: relative;
+        margin-left: 0px;
+    }
+
+    .references {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
+    }
+
+    .references-title {
+        width: 750px;
+        height: 87px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+
+    .slider-references {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-top: 200px;
+    }
+
+    .slider-refer-btn {
+        position: relative;
+        right: 0;
+    }
+
+    .references-elements {
+        display: flex;
+        margin-top: 0px;
+        justify-content: flex-end;
+        margin-top: 50px;
+    }
+
+    .references-left {
+        width: 380px;
+        margin-left: 0px;
+    }
+
+    .references-right {
+        margin-left: 20px;
+        width: 380px;
+    }
+
+    .references-elements p {
+        width: 370px;
+        height: 100px;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    .why-yolo-title {
+        width: 790px;
+        height: 250px;
+    }
+
+    .why-yolo-img {
+        width: 800px;
+        overflow: hidden;
+    }
+
+    footer {
+        margin-top: 150px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .footer-logo {
+        margin-top: 70px;
+        margin-bottom: 130px;
+    }
+
+    .contact-yolo {
+        font-weight: 400;
+        font-size: 23px;
+    }
+
+    .footer-menu {
+        font-weight: 300;
+        font-size: 22px;
+    }
+
+    .footer-border {
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+
+    .footer-copyright>p {
+        font-size: 15px;
+    }
+
+    .madeby {
+        margin-bottom: 30px;
+    }
+}
+
+/*
+@media screen and ( max-width: 800px) {
+    .boat {
+        width: 500px;
+        height: 700px;
+    }
+    .about-yolo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .about-yolo-right {
+        width: 600px;
+        margin-top: 150px;
+        margin-left: 0px;
+    }
+    .about-yolo-right > h2 {
+        font-size: 54px;
+    }
+    .about-yolo-right h4 {
+        font-size: 28px;
+    }
+    .about-yolo-left {
+        margin-left: 0px;
+    }
+    .island {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .island-left {
+        width: 600px;
+        height: 500px;
+    }
+    .slider-island {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .slider-btn {
+        display: block;
+        margin-top: 48px;
+        position: relative;
+        right: 0;
+    }
+    .slider-element-left {
+        margin: 0;
+    }
+    .slider-el-left-img {
+        width: 380px;
+        height: 530px;
+    }
+    .slider-el-right-img {
+        width: 380px;
+        height: 530px;
+    }
+    .slider-element-right {
+        margin-left: 20px;
+    }
+    
+    .experience {
+        display: flex;
+        position: relative;
+        margin-top: 80px;
+        provjeri sutra šta se poremetilo sa column umjesto column-reverse
+        flex-direction: column;
+        align-items: center;}
+    
+    .experience-right {
+        width: 600px;
+        height: 400px;
+        margin-left: 0px;
+        margin-top: 20px;
+        
+    }
+    .experience-left {
+        margin-top: 50px;
+    }
+    .experience-left > img {
+        width: 500px;
+        height: 700px;
+        position: relative;
+        margin-left: 0px;
+    }
+    .references {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
+    }
+    .references-title {
+        width: 750px;
+        height: 87px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    .slider-references {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-top: 200px;
+    }
+    .slider-refer-btn {
+        position: relative;
+        right: 0;
+    }
+    .references-elements {
+        display: flex;
+        margin-top: 0px;
+        justify-content: flex-end;
+        margin-top: 50px;
+    }
+    .references-left {
+        width: 380px;
+        margin-left: 0px;
+    }
+    .references-right {
+        margin-left: 20px;
+        width: 380px;
+    }
+    .references-elements p {
+        width: 370px;
+        height: 100px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 20px;
+    }
+    .why-yolo-title {
+        width: 790px;
+        height: 250px;
+    }
+    .why-yolo-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .why-img-left {
+        margin: 0 auto;
+        width: 300px;
+        height: 250px;
+       
+    }
+    .why-img-middle{
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+    .why-img-shine {
+        position: absolute;
+        margin-top: -10px;
+        margin-left: 500px;
+        margin-bottom: 500px;
+    }
+    .why-img-right {
+        margin-top: 50px;
+    }
+
+    footer {
+        margin-top: 150px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .footer-logo {
+        margin-top: 70px;
+        margin-bottom: 130px;
+    }
+    .contact-yolo {
+        font-weight: 400;
+        font-size: 23px;
+    }
+    .footer-menu {
+        font-weight: 300;
+        font-size: 22px;
+    }
+    .footer-border {
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+    .footer-copyright > p {
+        font-size: 15px;
+    }
+    .madeby {
+        margin-bottom: 30px;
+    }
+} */
+
+/** dorada
+@media screen and (max-width: 600px) {
+    .flex-container {
+        padding-left: 24px;
+        width: 60%;
+    }
+    .hamburger > h5 {
+        display: none;
+    }
+    .intro-title {
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-top: 199px;
+    }
+    .intro-title > h1 {
+        width: fit-content;
+        font-size: 42px;
+    }
+
+    .intro-img {
+        margin-top: 230px;
+        display: flex;
+        position: relative;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .intro-img-btn {
+        margin-bottom: 25px;
+    }
+    .about-yolo-right {
+        width: 430px;
+        margin-top: 120px;
+        margin-left: 5px;
+    }
+    h2 {
+        font-size: 45px;
+    }
+    .about-yolo-right > h2 {
+        text-align: center;
+    }
+    .boat {
+        width: 420px;
+        height: 630px;
+    }
+    .about-yolo-shine {
+        right: -10px;
+    }
+    .island {
+        margin-top: 120px;
+    }
+    .island-left {
+        width: 430px;
+        height: 500px;
+    }
+    .slider-element-right {
+        display: none;
+    }
+    .experience-right {
+        width: 430px;
+    }
+    .experience-left > img {
+        width: 430px;
+        height: 630px;
+    }
+    .references {
+        margin-top: 120px;
+    }
+    .references-title {
+        width: 430px;
+    }
+    .references-right {
+        display: none;
+    }
+    .quote  {
+        margin-top: 120px;
+    }
+    .quote > img {
+        height: 50vh;
+    }
+    .quote-request {
+        margin-top: 200px;
+        margin-left: 50px;
+        width: 400px;
+    }
+    .quote-request > h2 {
+        font-size: 30px;
+
+    }
+    .quote-request > .blue-button {
+        width: 170px;
+        height: 50px;
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+}
+*/
+@media screen and (max-width: 450px) {
+    .flex-container {
+        padding-left: 24px;
+        width: 60%;
+    }
+
+    .hamburger>h5 {
+        display: none;
+    }
+
+    .intro-title {
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-top: 199px;
+        margin-bottom: 305px;
+
+    }
+
+    .intro-title>h1 {
+        width: fit-content;
+        font-size: 42px;
+    }
+
+    .intro-img {
+        display: none;
+    }
+
+
+    .about-yolo-left {
+        margin-left: 24px;
+        margin-right: 24px;
+        width: fit-content;
+    }
+
+    .boat {
+        width: 400px;
+        height: 630px;
+    }
+
+    .about-yolo-shine {
+        right: -10px;
+    }
+
+    .about-yolo-right {
+        width: fit-content;
+        margin-top: 64px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .about-yolo-right>h2 {
+        font-size: 42px;
+        line-height: 110%;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    .about-yolo-text {
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+
+    .about-yolo-right h4 {
+        font-size: 26px;
+    }
+
+    .about-yolo-parag>.blue-button {
+        margin-bottom: 65px;
+        width: 228px;
+    }
+
+    .island {
+        margin-top: 65px;
+        width: fit-content;
+    }
+
+    .island-left {
+        width: 400px;
+        height: 500px;
+        margin-left: 24px;
+    }
+
+    .island-right {
+        overflow: hidden;
+        width: 426px;
+    }
+
+    .slider-island {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .slider-element {
+        overflow: hidden;
+        width: 450px;
+        margin-left: 24px;
+    }
+
+    .slider-el-left-img {
+        width: 300px;
+        height: 460px;
+    }
+
+    .slider-el-right-img {
+        width: 300px;
+        height: 460px;
+    }
+
+    .slider-btn {
+        display: none;
+    }
+
+    .experience {
+        display: flex;
+        position: relative;
+        margin-top: 128px;
+        flex-direction: column;
+    }
+
+    .experience-left {
+        margin-top: 0px;
+    }
+
+    .experience-left>img {
+        width: 450px;
+        height: 522px;
+    }
+
+    .experience-right {
+        width: 400px;
+        margin-top: 62px;
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 65px;
+    }
+
+    .references {
+        margin-top: 65px;
+    }
+
+    .references-title {
+        width: 400px;
+        height: 168px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .slider-references {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 64px;
+    }
+
+    .references-elements {
+        margin-left: 24px;
+    }
+
+    .quote {
+        margin-top: 64px;
+    }
+
+    .quote-request {
+        margin-left: 24px;
+        width: 372px;
+        height: 236px;
+        margin-top: 65vh;
+    }
+
+    .quote-request>.blue-button {
+        width: 228px;
+    }
+
+    .why-yolo {
+        margin-top: 64px;
+
+    }
+
+    .why-yolo-title {
+        width: 400px;
+        height: 250px;
+    }
+
+    .why-yolo-img {
+        width: 450px;
+        justify-content: center;
+    }
+
+    .why-img-left {
+        width: 140px;
+        height: 100px;
+    }
+
+    .why-img-middle {
+        width: 260px;
+        height: 320px;
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+
+    .why-img-shine {
+        margin-left: 0px;
+        margin-right: 30px;
+    }
+
+    .why-img-right {
+        width: 120px;
+        height: 160px;
+        margin-top: 96px;
+    }
+
+    footer {
+        margin-top: 128px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .footer-logo {
+        margin-top: 80px;
+        margin-bottom: 120px;
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-menu {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .footer-border {
+        margin-top: 64px;
+        margin-bottom: 24px;
+    }
+
+    .footer-copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-copyright>div {
+        flex-direction: column;
+        height: 91px;
+        gap: 0;
+    }
+
+    .madeby {
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .intro-title {
+        margin-bottom: 370px;
+    }
+
+    .boat {
+        width: 327px;
+        height: 460px;
+    }
+
+    .about-yolo-left {
+        margin-top: 128px;
+    }
+
+    .about-yolo-parag>.blue-button {
+        width: 192px;
+    }
+
+    .island {
+        width: 100%;
+    }
+
+    .island-left {
+        width: 327px;
+        height: 500px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .island-left .blue-button {
+        width: 235px;
+    }
+
+    .island-right {
+        width: 326px;
+    }
+
+    .island-right {
+        width: 351px;
+        margin-left: -24px;
+    }
+
+    .experience-left>img {
+        width: 100%;
+        height: 532px;
+    }
+
+    .experience-right {
+        width: 327px;
+        height: fit-content;
+        margin-top: 62px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .references-title {
+        width: 327px;
+    }
+
+    .references-left {
+        width: 298px;
+        height: 298px;
+    }
+
+    .references-right {
+        width: 298px;
+        height: 298px;
+    }
+
+    .references-elements p {
+        width: 250px;
+        height: 151px;
+        text-align: center;
+    }
+
+    .references-guest {
+        width: 163px;
+        height: 32px;
+    }
+
+    .references-guest>img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .references-guest>h6 {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .references-left>.parag-1 {
+        font-size: 18px;
+    }
+
+    .why-yolo {
+        margin-top: 128px;
+    }
+
+    .why-yolo-title {
+        width: 327px;
+        height: 250px;
+    }
+
+    .why-img-shine {
+        width: 41.13px;
+        height: 37.99px;
+    }
+
+    .why-yolo-img {
+        width: 375px;
+    }
+
+    .why-img-right {
+        margin-left: -30px;
+    }
+
+}

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meta oznake za bolji SEO, od pretraga do dijeljenja linka stranice-->
+    <meta name="description" content="YOLO cruiser - Luxury yacht experience in Croatia.">
+    <meta name="keywords" content="Yacht, Croatia, Luxury, Cruise, YOLO">
+    <meta name="author" content="Yacht YOLO cruiser">
+    <meta property="og:title" content="YOLO Cruiser">
+    <meta property="og:description" content="Experience luxury yacht cruising in Croatia.">
+    <meta property="og:image" content="/assets/img/index-front-page.png">
+    <meta property="og:url" content="https://www.yolo.hr">
+    <meta name="twitter:card" content="summary_large_image">
+    <!---->
+    <!--meta oznake za sigurnost tranice-->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; 
+    script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com; 
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+    font-src 'self' https://fonts.gstatic.com">
+
+    <link rel="stylesheet" href="/assets/css/general.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>YOLO cruiser</title>
+    <!-- Povezivanje s React aplikacijom -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="text">
+                <div class="overlay-content">
+                    <a href="#">
+                        <h3>Home</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Yolo</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Experience</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Destination</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Inquire now</h3>
+                    </a>
+                </div>
+                <div class="overlay-content lng">
+                    <a href="#" class="lngo">HR</a>
+                    <a href="#" class="lngo lngactive">ENG</a>
+                    <a href="#" class="lngo">DE</a>
+                    <a href="#" class="lngo">IT</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="menu-full">
+            <div class="nav-dio">
+                <div class="hamburger-menu-full" style="cursor:pointer" onclick="openNav()">
+                    <div class="menu-text">
+                        <h5>MENU</h5>
+                    </div>
+                    <div class="hamburger-menu">
+                        <div class="ham-burger bar-top"></div>
+                        <div class="ham-burger bar-middle"></div>
+                        <div class="ham-burger bar-bottom"></div>
+                    </div>
+                </div>
+                <img src="/assets/img/logo-white.png" class="flex">
+                <div class="placeholder"></div>
+            </div>
+        </div>
+    </header>
+
+    <div id="root"></div>
+
+    <section class="maxw about-yolo-sec">
+        <div class="about-yolo">
+            <div class="about-yolo-left">
+                <div class="about-yolo-boat">
+                    <img src="/assets/img/index-about-yolo.png" class="boat" alt="ship">
+                </div>
+                <div class="about-yolo-shine">
+                    <img src="/assets/img/Shine.png" alt="star" width="76.13px" height="70.32px">
+                </div>
+            </div>
+            <div class="about-yolo-right">
+                <h2>About cruise ship Yolo</h2>
+                <div class="about-yolo-text">
+                    <div>
+                        <h4>48.5m</h4>
+                        <h5>LENGHT</h5>
+                    </div>
+                    <div>
+                        <h4>38m</h4>
+                        <h5>PASSENGERS</h5>
+                    </div>
+                    <div>
+                        <h4>18m</h4>
+                        <h5>CABINS</h5>
+                    </div>
+                </div>
+                <div class="about-yolo-parag">
+                    <h4>we make it happen</h4>
+                    <p class="parag-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                        fringilla
+                        sit amet nisi ut blandit. Integer finibus tincidunt est ut ornare. Nunc lectus arcu, viverra
+                        vel
+                        blandit ut, sollicitudin ac sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Pellentesque fringilla sit amet nisi ut blandit. Integer finibus tincidunt est ut ornare.
+                        Nunc lectus arcu, viverra vel blandit ut, sollicitudin
+                        ac sem. </p>
+                    <button class="blue-button">DISCOVER</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="maxw island-sec">
+        <div class="island">
+            <div class="island-left">
+                <h5>REPUBLIC OF CROATIA</h5>
+                <h2>More than 1000 islands to discover</h2>
+                <p class="parag-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla
+                    sit
+                    amet nisi ut blandit. Integer finibus tincidunt est ut ornare. Nunc lectus arcu, viverra vel
+                    blandit
+                    ut,
+                    sollicitudin ac sem. </p>
+                <button class="blue-button">DESTINATIONS</button>
+            </div>
+            <div class="island-right">
+                <div class="slider-island slider-container">
+                    <div class="slider-element inner-slider">
+                        <div class="slider-element-left card">
+                            <div>
+                                <img src="/assets/img/index-island-brac.png" class="slider-el-left-img">
+                            </div>
+                            <div class="slider-left-text">
+                                <h5>ISLAND</h5>
+                                <p>Brač</p>
+                            </div>
+                        </div>
+
+                        <div class="slider-element-right card">
+                            <div>
+                                <img src="/assets/img/index-island-hvar.png" class="slider-el-right-img">
+                            </div>
+                            <div class="slider-right-text">
+                                <h5>ISLAND</h5>
+                                <p>Hvar</p>
+                            </div>
+                        </div>
+                        <div class="slider-element-right card">
+                            <div>
+                                <img src="/assets/img/index-island-dubrovnik.jpg" class="slider-el-right-img">
+                            </div>
+                            <div class="slider-right-text">
+                                <h5>ISLAND</h5>
+                                <p>Dubrovnik</p>
+                            </div>
+                        </div>
+                        <div class="slider-element-right card">
+                            <div>
+                                <img src="/assets/img/index-island-korcula.jpg" class="slider-el-right-img">
+                            </div>
+                            <div class="slider-right-text">
+                                <h5>ISLAND</h5>
+                                <p>Korčula</p>
+                            </div>
+                        </div>
+                        <div class="slider-element-right card">
+                            <div>
+                                <img src="/assets/img/index-island-vis.jpg" class="slider-el-right-img">
+                            </div>
+                            <div class="slider-right-text">
+                                <h5>ISLAND</h5>
+                                <p>Vis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-btn">
+                        <button class="slider-left btnLeft">
+                            <div class="arrow-left"></div>
+                        </button>
+                        <button class="slider-right btnRight">
+                            <div class="arrow-right"></div>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="maxw experience-sec">
+        <div class="experience">
+            <div class="experience-left">
+                <img src="/assets/img/index-yolo-experience.png" alt="boat">
+            </div>
+            <div class="experience-right">
+                <h5>WHAT TO EXPECT</h5>
+                <h2>The Yolo oboard Experience</h2>
+                <p class="parag-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla
+                    sit
+                    amet nisi ut blandit. Integer finibus tincidunt est ut ornare. Nunc lectus arcu, viverra vel
+                    blandit
+                    ut, sollicitudin ac sem.
+                    Lorem ipsum dolor sit amet.</p>
+                <button class="blue-button">Discover</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="maxw references-sec">
+        <div class="references">
+            <div class="references-title">
+                <h5>OUR REFERENCES</h5>
+                <h2>What do they say about Yolo?</h2>
+            </div>
+            <div class="slider-references">
+                <div class="slider-refer-btn">
+                    <button class="slider-left">
+                        <div class="arrow-left"></div>
+                    </button>
+                    <button class="slider-right">
+                        <div class="arrow-right"></div>
+                    </button>
+                </div>
+                <div class="references-elements">
+                    <div class="references-left">
+                        <p class="parag-1">“This was really one in lifetime experience. We had agreat time at the
+                            Adriatic sea with Yolo. I would recommend it to
+                            everyone.”</p>
+                        <div class="references-guest">
+                            <img src="/assets/img/index-ref-guest-Eliot.png">
+                            <h6>Eliot Jeffery</h6>
+                        </div>
+                    </div>
+                    <div class="references-right">
+                        <p class="parag-1">“Croatia is super nice Country to visit, but yacht ecperience
+                            boosts it even on a higher lever, it is going to be hard to
+                            beat this one”</p>
+                        <div class="references-guest">
+                            <img src="/assets/img/index-ref-guest-Maya.png">
+                            <h6>Maya Nairn</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="maxw quote-sec">
+        <div class="quote">
+            <img src="/assets/img/index-quote.png">
+            <div class="quote-request">
+                <h5>ASK US A QUOTE</h5>
+                <h2>Ensure your spot on the Yolo</h2>
+                <button class="blue-button">INQUIRE NOW</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="maxw why-yolo-sec">
+        <div class="why-yolo">
+            <div class="why-yolo-title">
+                <h5>WHY YOLO</h5>
+                <h2>Combination of perfect destinations, and luxury yachting
+                    experience. </h2>
+            </div>
+            <div class="why-yolo-img">
+                <img src="/assets/img/index-why-beach.png" class="why-img-left">
+                <img src="/assets/img/index-why-ship.jpg" class="why-img-middle">
+                <img src="/assets/img/Shine.png" width="76.13px" height="70.32px" class="why-img-shine">
+                <img src="/assets/img/index-why-couple.png" class="why-img-right">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="maxw footer-upper">
+            <img src="/assets/img/logo-white.png" alt="logo" class="footer-logo">
+            <div class="footer-contact">
+                <div class="contact">
+                    <div class="contact-yolo">
+                        <a class="contact-yolo-text" href="mailto:hello@yolo.hr">hello@yolo.hr</a>
+                    </div>
+                    <div class="contact-yolo">
+                        <a class="contact-yolo-text" href="tel:+385911536542">00385911536542</a>
+                    </div>
+                    <div>
+                        <img src="/assets/img/footer-icons.png" alt="social network icons" width="100px" height="20px"
+                            class="footer-contact-img">
+                    </div>
+                </div>
+                <div class="footer-menu">
+                    <p>Home</p>
+                    <p>Yolo</p>
+                    <p>Experience</p>
+                    <p>Destinations</p>
+                    <p>Inquire Now</p>
+                </div>
+                <div class="footer-address">
+                    <p>TOURIST AGENCY JOAN D.O.O.<br>
+                        Molo Lozna 23, 21410<br>
+                        Postira, island brač<br>
+                        republic of croatia</p>
+                </div>
+            </div>
+        </div>
+        <div class="maxw footer-lower">
+            <hr class="footer-border">
+            <div class="footer-copyright">
+                <p>© Copyright . Yolo 2022</p>
+                <div>
+                    <p>TRAVEL TIPS</p>
+                    <p>TERMS OF SERVICE</p>
+                    <p>PRIVACY POLICY</p>
+                </div>
+            </div>
+            <div>
+                <img src="/assets/img/footer-madeby.png" alt="madeby" class="madeby" width="128.31px" height="20px">
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Povezivanje s vanjskom JavaScript datotekom s tipom 'module' -->
+    <script type="text/babel">
+        // Ovdje pišeš svoj React kod s JSX-om
+        function App() {
+            const [scrollY, setScrollY] = useState(0);
+
+            useEffect(() => {
+                const handleScroll = () => {
+                    setScrollY(window.scrollY);
+                };
+
+                window.addEventListener('scroll', handleScroll);
+                return () => window.removeEventListener('scroll', handleScroll);
+            }, []);
+
+            const scrollToBottom = () => {
+                window.scrollTo({
+                    top: document.documentElement.scrollHeight,
+                    behavior: 'smooth',
+                });
+            };
+            return (
+                <main>
+                    <section className="intro">
+                        <div className="overlay-img"></div>
+                        <img
+                            src="/assets/img/index-front-page.png"
+                            className="ship"
+                            loading="lazy"
+                            alt="Yolo ship"
+                            style={{ transform: `translateY(${scrollY * 0.5}px)` }}
+                        />
+                        <div className="intro-anim">
+                            <div className="intro-title">
+                                <h1>Live your dream, Escape the routine.</h1>
+                                <button className="intro-btn">START EXPLORING</button>
+                            </div>
+
+                            <div className="intro-img">
+                                <img
+                                    src="/assets/img/Scroller.png"
+                                    alt="scroller"
+                                    width="15.5px"
+                                    height="26px"
+                                    onClick={scrollToBottom}  // Klikom na scroller prebacuje na dno stranice
+                                    style={{ cursor: 'pointer' }} // Promjena kursora
+                                />
+                                <button className="intro-img-btn">
+                                    <img
+                                        src="/assets/img/index-front-page.png"
+                                        loading="lazy"
+                                        alt="Inquire button"
+                                    />
+                                    INQUIRE NOW
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                </main>
+            );
+        }
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+    <script src="/assets/JS/menu.js"></script>
+    <script src="/assets/JS/script.js"></script>
+
+</body>
+
+</html>

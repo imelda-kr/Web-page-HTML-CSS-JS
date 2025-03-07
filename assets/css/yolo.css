@@ -1,0 +1,1249 @@
+*{
+    padding: 0;
+    margin: 0;  
+}
+.maxw {
+    max-width: 1376px;
+    margin: 0 auto;
+}
+.container {
+    padding-left: 136px;
+    padding-right: 136px;
+}
+
+header {
+    z-index: 4;
+    position: relative;
+    height: 108px;
+    width: 100%;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background: rgba(1, 49, 170, 0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align:left;
+    margin-top: 30px;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    text-decoration: underline;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    font-size: 60px;
+}
+.text {
+    position: absolute;
+    top: 177px;
+    left: 138px;
+}
+.lng {
+    width: 171px;
+    height: 26px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.23em;
+    text-transform: uppercase;
+    color: #E4E4E4;
+}
+.lng > .lngactive {
+    
+    color: #FFFFFF;
+}
+
+.menu-full {
+    position: sticky;
+    z-index: 2;
+}
+.nav-dio {
+    display: flex;
+    justify-content: space-between;
+    height: 108px;
+    width: 100%;
+    padding-left: 64px;
+    padding-right: 64px; 
+}
+.hamburger-menu-full {
+    display: flex;
+    justify-content: space-between;
+    width: 81px;
+    height: 12px;
+    margin-top: 48px;
+    
+}
+.menu-text > h5 {
+    color: #FFFFFF;
+    font-size: 13px;
+}
+.hamburger-menu {
+    width: 30px;
+    height: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+.hamburger-menu [class*='bar-'] {
+    width: 30px;
+    border: 1px solid #FFFFFF;
+    transition: .2s ease all;
+    margin-left: 8px;
+}
+
+.active .bar-top {
+    transform: translate(0,5px) rotate(-25deg);
+}
+.active .bar-middle {
+    opacity: 0;
+}
+.active .bar-bottom {
+    transform: translate(0,-5px) rotate(25deg);
+}
+
+.flex {
+    margin-top: 26px;
+    width: 98.5px;
+    height: 40px;
+}
+.placeholder {
+    width: 100px;
+    height: 80px;
+    margin-top: 20px;
+    margin-right: 64px;
+}
+.overlay-img {
+    position: absolute;
+    width: 100%;
+    height: 115vh;
+    left: 0;
+    top: -108px;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+.ship {
+    width: 100%;
+    height: 115vh;
+    position: absolute;
+    z-index: -1;
+    top: -108px;
+    left: 0;
+}
+
+.intro-title {
+    margin-top: 252px;
+    margin-left: 136px;
+    width: 846px;
+    height: 120px;
+    color: #FFFFFF;
+    position: relative;
+    z-index: 3;
+}
+
+.intro-img {
+    position: relative;
+    margin-left: 50%;
+    margin-top: 429px;
+}
+.welcome-title {
+    margin-top: 209px;
+}
+.welcome-title > p {
+    margin-top: 4px;
+}
+.parag-3 {
+    color: #707070;
+}
+.border {
+    width: 668px;
+    border: 1px solid #E4E4E4;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.welcome {
+    position: relative;
+    overflow: clip;
+}
+.welcome-info {
+    display: flex;
+    align-items: center;
+}
+.welcome-info-middle {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.welcome-info > img {
+    width: 24px;
+    height: 24px;
+}
+.welcome-info > div {
+    margin-left: 16px;
+}
+.welcome-host {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.welcome-host > img {
+    width: 44px;
+    height: 44px;
+}
+.welcome-host > div {
+    margin-left: 16px;
+}
+.welcome-host-text {
+    width: 668px;
+    height: 88px;
+}
+.welcome-yolo-img > img {
+    position: absolute;
+    width: 536px;
+    height: 713px;
+    right: 0;
+    top: 0;
+    clip: rect(0px,400px,713px,0px);
+}
+.basic-details > h4 {
+    margin-bottom: 40px;
+}
+.basic-details-info {
+    display: flex;
+}
+.basic-details-text {
+    display: flex;
+    align-items: center;
+}
+.basic-details-text > img {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+.basic-details-info-right {
+    margin-left: 109px;
+}
+.basic-details-info-left > .yacht {
+    margin-bottom: 24px;
+}
+.basic-details-info-left > .draft {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.basic-details-info-right > .built {
+    margin-bottom: 24px;
+}
+.basic-details-info-right > .cabins {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.technical-details > h4 {
+    margin-bottom: 40px;
+}
+.technical-details-text {
+    display: flex;
+}
+.technical-det-text-middle {
+    margin-left: 64px;
+    margin-right: 69px;
+}
+.crew > h4 {
+    margin-bottom: 40px;
+}
+.crew-info {
+    display: flex;
+}
+.crew-info-text {
+    display: flex;
+    align-items: center;
+}
+.crew-info-text > img {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+.crew-info-right {
+    margin-left: 147px;
+}
+.crew-info-left > .chef {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.crew-info-right > .deckhands {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.blueprint {
+    margin-top: 180px;
+    width: 1168px;
+    height: 339px;
+}
+.blueprint-text {
+    width: 659px;
+    height: 42px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 256px;
+    margin-top: 64px;
+}
+.exterior-galery {
+    margin-top: 180px;
+    display: flex;
+}
+.exterior-galery > img {
+    width: 768px;
+    height: 508px;
+}
+.exterior-galery-right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+    z-index: 1;
+}
+
+.exterior-galery-right > img {
+    width: 368px;
+    height: 238px;
+}
+.exterior-galery-right > .img-front {
+    margin-bottom: 32px;
+}
+
+.exterior-galery-right > button {
+    width: 166px;
+    height: 48px;
+    background: #FFFFFF;
+    border: none;
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+    bottom: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.23em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.galery_icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.ship-amenities > h4 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.ship-amenities-info {
+    display: flex;
+    justify-content: space-between;
+   
+}
+.ship-amenities-text {
+    display: flex;
+    align-items: center;
+
+}
+.ship-amenities-text > img {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+.ship-amenities-first :not(:last-child) {
+    margin-bottom: 24px;
+}
+.ship-amenities-text :not(:first-child) {
+    margin-bottom: 24px;
+}
+
+.ship-amenities-second :not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.ship-amenities-third :not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.ship-amenities-forth :not(:last-child) {
+    margin-bottom: 24px;
+}
+.cabins > h2 {
+    margin-top: 180px;
+    margin-bottom: 40px;
+}
+.cabins-photo > img {
+    width: 368px;
+    height: 220px;
+}
+.cabins-photo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+.cabins-bed-icon img {
+    width: 40px;
+    height: 40px;
+}
+.cabins-bed-icon {
+    display: flex;
+    margin-bottom: 20px;
+}
+.cabins-bed-icon > div:nth-child(2) {
+    margin-left: 360px;
+    margin-right: 321px;
+}
+.cabins-bed-txt {
+    display: flex;
+    margin-bottom: 64px;
+}
+.cabins-bed-txt > div:nth-child(2) {
+    margin-left: 288px;
+    margin-right: 305px;
+}
+.cabins-amenities > h4 {
+    margin-bottom: 40px;
+}
+.cabins-amenities-info {
+    display: flex;
+    justify-content: space-between;
+   
+}
+.cabins-amenities-text {
+    display: flex;
+    align-items: center;
+
+}
+.cabins-amenities-text > img {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+.cabins-amenities-first :not(:last-child) {
+    margin-bottom: 24px;
+}
+.cabins-amenities-text :not(:first-child) {
+    margin-bottom: 24px;
+}
+
+.cabins-amenities-second :not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.cabins-amenities-third :not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.cabins-amenities-forth :not(:last-child) {
+    margin-bottom: 24px;
+}
+.saloon-experience > h2 {
+    margin-top: 256px;
+    text-align: center;
+}
+.saloon-experience-first {
+    display: flex;
+}
+.experience-first-left > img {
+    width: 268px;
+    height: 440px;
+}
+.experience-first-left {
+    margin-top: 88px;
+    margin-left: 100px;
+  
+}
+.experience-first-right {
+    margin-left: 132px;
+    margin-top: 161px;
+}
+.experience-first-right > img {
+    width: 476px;
+    height: 540px;
+}
+.saloon-experience-second {
+    display: flex;
+}
+.experience-second-left {
+    margin-top: 201px;
+}
+.experience-second-left > img {
+    width: 640px;
+    height: 640px;
+}
+.experience-second-right {
+    margin-top: 200px;
+    margin-left: 132px;
+}
+.experience-second-right > h3 {
+    width: 368px;
+    height: 104px;
+    margin-bottom: 219px;
+}
+.experience-second-right > img {
+    width: 326px;
+    height: 460px;
+}
+.saloon-experience-third {
+    margin-top: 256px;
+}
+.saloon-experience-third > img {
+    width: 568px;
+    height: 376px;
+    transform: translate(50%);
+}
+.saloon-mediterranean {
+    display: flex;
+}
+.saloon-mediterranean-left {
+    margin-top: 224px;
+    margin-left: 100px;
+}
+.saloon-mediterranean-left > h3 {
+    width: 368px;
+    height: 104px;
+    margin-bottom: 139px;
+}
+.saloon-mediterranean-left > img {
+    width: 467px;
+    height: 295px;
+}
+.saloon-mediterranean-right {
+    margin-left: 132px;
+    margin-top: 218px;
+}
+.saloon-mediterranean-right > img {
+    width: 468px;
+    height: 640px;
+}
+.lounge-area {
+    margin-left: 100px;
+    margin-top: 199px;
+    display: flex;
+}
+.lounge-area > :first-child {
+    width: 568px;
+    height: 340px;
+}
+.lounge-area > :last-child {
+    width: 368px;
+    height: 244px;
+    margin-left: 132px;
+    margin-top: 170px;
+    
+}
+
+footer {
+    margin-top: 176px;
+    padding-left: 131px;
+    padding-right: 136px;
+    background: rgba(1, 49, 170, 0.8);
+    backdrop-filter: blur(40px);
+}
+.footer-logo {
+    margin-top: 120px;
+    margin-bottom: 180px;
+    Width: 68.95px;
+    Height: 28px;
+}
+.footer-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-yolo {
+
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46.8px;
+    
+}
+.footer-contact-img {
+    margin-top: 20px;
+}
+a:link, a:visited, a:hover, a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}  
+.footer-menu {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 170%;
+    color: #FFFFFF;
+}
+.footer-address {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 21px;
+    letter-spacing: 0.27em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.footer-border {
+    margin-top: 140px;
+    margin-bottom: 40px;
+    border: 1px solid #4B68B1;
+}
+
+
+.footer-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-copyright > p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.footer-copyright > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 60px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 25px;
+    letter-spacing: 0.48em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.madeby {
+    margin-bottom: 132px;
+}
+@media screen and (max-width:1440px) {
+    .intro-img {
+        margin-left: 50%;
+        margin-top: 321px;
+
+    }
+    .nav-dio {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .placeholder {
+        margin-right: 32px;
+    }
+    
+}
+
+@media screen and (max-width:1440px) {
+ 
+    .welcome-yolo-img > img {
+        clip: rect(0px,380px,713px,0px);
+        right: -45px;
+    }
+    
+}
+
+@media screen and (max-width: 1112px){
+    .ship {
+        object-fit: cover;
+    }
+    .intro-title {
+        width: 700px;
+    }
+    .intro-title > h1 {
+        font-size: 55px;
+    }
+    .container {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .welcome-host-text {
+        width: 520px;
+    }
+    .welcome-yolo-img > img {
+        width: 480px;
+        height: 650px;
+    }
+    .border {
+        width: 500px;
+    }
+    
+    .blueprint {
+        width: 950px;
+        height: 339px;
+    }
+    .blueprint-text {
+        margin-left: 150px;
+    }
+    .exterior-galery {
+        flex-direction: column;
+    }
+    .exterior-galery > img {
+        width: 760px;
+        height: 508px;
+    }
+    .exterior-galery-right {
+        flex-direction: row;
+        margin-left: 0px;
+        margin-top: 25px
+    }
+    .exterior-galery-right > .img-front {
+        margin-right: 25px;
+    }
+    .exterior-galery-right > button {
+        right: 205px;
+        bottom: 50px;
+    }
+    .cabins-photo > img {
+        width: 310px;
+        height: 195px;
+    }
+    .experience-first-left {
+        margin-top: 88px;
+        margin-left: 40px;
+    }
+    .experience-second-left > img {
+        width: 550px;
+        height: 550px;
+    }
+    .experience-second-right {
+        margin-left: 50px;
+    }
+    .experience-second-right > h3 {
+        margin-bottom: 150px;
+    }
+    .saloon-experience-third {
+        margin-top: 150px;
+    }
+    .saloon-mediterranean-left {
+        margin-top: 224px;
+        margin-left: 40px;
+    }
+    .saloon-mediterranean-left > img {
+        width: 437px;
+        height: 265px;
+    }
+    .saloon-mediterranean-right {
+        margin-left: 50px;
+    }
+    .saloon-mediterranean-right > img {
+        width: 418px;
+        height: 590px;
+    }
+    .lounge-area {
+        margin-left: 0px;
+    }
+    .lounge-area > :first-child {
+        width: 520px;
+        height: 300px;
+    }
+    .lounge-area > :last-child {
+        margin-left: 50px;
+    }
+}
+
+@media screen and ( max-width: 800px) {
+    .container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .intro-title {
+        margin-top: 252px;
+        margin-left: 70px;
+        width: 650px;
+    }
+    .welcome-title > h1 {
+        margin-bottom: 750px;
+    }
+    .welcome-title > p {
+       visibility: hidden;
+    }
+    .welcome-title > .border {
+        visibility: hidden;
+    }
+    .welcome-yolo-img > img {
+        top: 100px
+    }
+    .blueprint {
+        width: 680px;
+        height: 150px;
+    }
+    .blueprint-text {
+        margin-left: 10px;
+    }
+    .ship-amenities-text > p {
+        font-size: 14px;
+    }
+    .exterior-galery > img {
+        width: 680px;
+        height: 420px;
+    }
+    .exterior-galery-right > img {
+        width: 327px;
+        height: 200px;
+    }
+    .exterior-galery-right > button {
+        width: 130px;
+        height: 40px;
+        right: 35px;
+    }
+    .galery_icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 3px;
+        margin-left: 5px;
+    }
+    .cabins-photo > img {
+        width: 220px;
+        height: 150px;
+    }
+    .cabins-bed-icon img {
+        width: 30px;
+        height: 30px;
+    }
+    .cabins-bed-icon > div:nth-child(2) {
+        margin-left: 200px;
+        margin-right: 170px;
+    }
+    
+    .cabins-bed-txt > div:nth-child(2) {
+        margin-left: 120px;
+        margin-right: 135px;
+    }
+    .cabins-amenities-text > p {
+        font-size: 14px;
+    }
+    .experience-first-left {
+        margin-left: 0px;
+    }
+    .experience-first-right {
+        margin-left: 30px;
+    }
+    .experience-first-right > img {
+        width: 375px;
+        height: 460px;
+    }
+    .experience-second-left > img {
+        width: 400px;
+        height: 400px;
+    }
+    .experience-second-right {
+        margin-left: 30px;
+    }
+    .experience-second-right > h3 {
+        width: 250px;
+        font-size: 35px;
+    }
+    .experience-second-right > img {
+        width: 250px;
+        height: 400px;
+    }
+    .saloon-experience-third > img {
+        transform: translate(10%);
+    }
+    .saloon-mediterranean-left {
+        margin-left: 0px;
+    }
+    .saloon-mediterranean-left > h3 {
+        margin-bottom: 100px;
+    }
+    .saloon-mediterranean-left > img {
+        width: 300px;
+        height: 200px;
+    }
+    .saloon-mediterranean-right {
+        margin-left: 0px;
+    }
+    .saloon-mediterranean-right > img {
+        width: 312px;
+        height: 490px;
+    }
+    .lounge-area {
+        flex-wrap: wrap;
+    }
+    footer {
+        margin-top: 150px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .footer-logo {
+        margin-top: 70px;
+        margin-bottom: 130px;
+    }
+    .contact-yolo {
+        font-weight: 400;
+        font-size: 23px;
+    }
+    .footer-menu {
+        font-weight: 300;
+        font-size: 22px;
+    }
+    .footer-border {
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+    .footer-copyright > p {
+        font-size: 15px;
+    }
+    .madeby {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .menu-text {
+        display: none;
+    }
+    .intro-title {
+        width: 327px;
+        margin-top: 240px;
+        margin-left: 24px;
+    }
+    .intro-title > h1 {
+        font-size: 42px;
+    }
+  
+    .welcome-title {
+        margin-top: 112px;
+    }
+    .welcome-title > h1 {
+        margin-bottom: 16px;
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 110%;
+    }
+    .welcome-title > p {
+       visibility: visible;
+    }
+    .welcome-title > .border {
+        visibility: visible;
+    }
+
+    .border {
+        width: 402px;
+    }
+
+    .welcome > hr:nth-child(6) {
+        display: none;
+    }
+    .welcome-host-part {
+        margin-top: 476px;
+    }
+    .welcome-host-text {
+        width: 402px;
+        height: 130px;
+    }
+    .welcome-yolo-img > img {
+        clip: unset;
+        width: 327px;
+        height: 348px;
+        left: 24px;
+        right: 0px;
+        margin-top: 364px;
+    }
+
+    .basic-details-info {
+        flex-direction: column;
+    }
+    .basic-details-info-right {
+        margin-left: 0px;
+        margin-top: 24px;
+    }
+    .crew-info {
+        flex-direction: column;
+    }
+    .crew-info-right {
+        margin-left: 0px;
+        margin-top: 24px;
+    }
+    .blueprint {
+        width: 327px;
+        height: 103px;
+        margin-top: 128px;
+    }
+    .blueprint-text {
+        display: none;
+    }
+    .exterior-galery {
+        margin-top: 154px;
+    }
+    .exterior-galery > img {
+        width: 327px;
+        height: 465px;
+        object-fit: cover;
+    }
+    .exterior-galery-right {
+        flex-direction: column;
+        margin-top: 32px;
+    }
+    .exterior-galery-right > .img-front {
+        height: 220px;
+    }
+    .exterior-galery-right > img {
+        height: 220px;
+    }
+    .exterior-galery-right > button {
+        width: 166px;
+        height: 48px;
+        right: 89px;
+        bottom: 16px;
+    }
+    .galery_icon {
+        width: 24px;
+        height: 24px;
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+    .ship-amenities > h4 {
+        margin-top: 64px; 
+    }
+    .ship-amenities-info {
+        flex-direction: column;
+    }
+    .ship-amenities-second {
+        margin-top: 24px;
+    }
+    .ship-amenities-third {
+        margin-top: 24px;
+    }
+    .ship-amenities-forth {
+        margin-top: 24px;
+    }
+    .cabins {
+        position: relative; 
+    }
+    .cabins > h2 {
+        margin-top: 128px;
+    }
+    .cabins-photo {
+        flex-direction: column;
+    }
+    .cabins-bed-icon {
+        flex-direction: column;
+    }
+    .cabins-bed-txt {
+        flex-direction: column;
+    }
+    .cabins-photo > img:nth-child(2) {
+        margin-top: 176px;
+        margin-bottom: 176px;
+    }
+    .cabins-bed-icon > div:nth-child(1) {
+        position: absolute;
+        top: 282px;
+    }
+    .cabins-bed-icon > div:nth-child(2) {
+        margin-left: 0px;
+        margin-right: 0px;
+        position: absolute;
+        top: 607px;
+    }
+    .cabins-bed-icon > div:nth-child(3) {
+        margin-top: -33px;
+    }
+    .cabins-bed-txt > div:nth-child(1) {
+        position: absolute;
+        top: 335px;
+    }
+    .cabins-bed-txt > div:nth-child(2) {
+        margin-left: 0px;
+        margin-right: 0px;
+        position: absolute;
+        top: 660px;
+    }
+    .cabins-amenities-info {
+        flex-direction: column;
+    }
+    .cabins-amenities-first :not(:last-child) {
+        margin-bottom: 21px;
+    }
+    .cabins-amenities-second {
+        margin-top: 21px;
+    }
+    .cabins-amenities-second :not(:last-child) {
+        margin-bottom: 21px;
+    }
+    .cabins-amenities-third {
+        margin-top: 21px;
+    }
+    .cabins-amenities-third :not(:last-child) {
+        margin-bottom: 21px;
+    }
+    .cabins-amenities-forth {
+        margin-top: 21px;
+    }
+    .cabins-amenities-forth :not(:last-child) {
+        margin-bottom: 21px;
+    }
+    .saloon-experience > h2 {
+        font-size: 42px;
+    }
+    .saloon-experience-first {
+        flex-direction: column;
+    }
+    .experience-first-left > img {
+        width: 327px;
+        height: 465px;
+        object-fit: cover;
+    }
+    .experience-first-right {
+        margin-left: 0px;
+        margin-top: 32px
+    }
+    .experience-first-right > img {
+        width: 327px;
+        height: 465px;
+        object-fit: cover;
+    }
+    .saloon-experience-second {
+        flex-direction: column;
+    }
+    .experience-second-left {
+        margin-top: 32px;
+    }
+    .experience-second-left > img {
+        width: 327px;
+        height: 465px;
+        object-fit: cover;
+    }
+    .experience-second-right > h3 {
+        display: none;
+    }
+    .experience-second-right {
+        margin-top: 32px;
+        margin-left: 0px;
+    }
+    .experience-second-right > img {
+        width: 327px;
+        height: 465px;
+    }
+    .saloon-experience-third {
+        margin-top: 32px;
+    }
+    .saloon-experience-third > img {
+        transform: translate(0%);
+        width: 327px;
+        height: 465px;
+        object-fit: cover;
+    }
+    .saloon-mediterranean {
+        flex-direction: column;
+    }
+    .saloon-mediterranean-left > h3 {
+        display: none;
+    }
+    .saloon-mediterranean-left {
+        margin-top: 32px;
+    }
+    .saloon-mediterranean-left > img {
+        width: 327px;
+        height: 465px;
+        object-fit: cover;
+    }
+    .saloon-mediterranean-right {
+        margin-top: 32px;
+    }
+    .saloon-mediterranean-right > img {
+        width: 327px;
+        height: 465px;
+        object-fit: cover;
+    }
+    .lounge-area {
+        flex-direction: column;
+        flex-wrap:nowrap;
+        margin-top: 32px;
+    }
+    .lounge-area > :first-child {
+        width: 327px;
+        height: 465px;
+        object-fit: cover;
+    }
+    .lounge-area > :last-child {
+        margin-top: 32px;
+        margin-left: 0px;
+        width: 327px;
+        height: 465px;
+        object-fit: cover;
+    }
+    footer {
+        margin-top: 128px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .footer-logo {
+        margin-top: 80px;
+        margin-bottom: 120px;
+    }
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-menu {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+    .footer-border {
+        margin-top: 64px;
+        margin-bottom: 24px;
+    }
+    .footer-copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-copyright > div {
+        flex-direction: column;
+        height: 91px;
+        gap: 0;
+    }
+    .madeby{
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .welcome-yolo-img > img {
+        margin-top: 428px;
+    }
+    .border {
+        width: 327px;
+    }
+    .welcome-host-text {
+        width: 327px;
+    }
+    .welcome > hr:nth-child(9) {
+        margin-top: 80px;
+    }
+}
